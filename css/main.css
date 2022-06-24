@@ -70,15 +70,14 @@ img {
 }
 
 /* header*/
-.page-header {
-  border-bottom: solid 1px #ececec;
-}
+
 .header-list {
   display: flex;
 }
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: solid 1px #ececec;
 }
 
 .logo-header {
@@ -141,6 +140,17 @@ img {
   color: var(--primary-bg-color);
   text-align: center;
   padding: 200px 0;
+
+  width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -190,6 +200,32 @@ img {
 .features-list:not(:last-child) {
   margin-right: 30px;
 }
+.features-list::before {
+  display: block;
+  content: ' ';
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25 px 100px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70 px 70 px;
+}
+
+.features-list:nth-child(1)::before {
+  background-image: url(../Иконки-feat/antenna\ 1.svg);
+}
+.features-list:nth-child(2)::before {
+  background-image: url(../Иконки-feat/clock\ 1.svg);
+}
+.features-list:nth-child(3)::before {
+  background-image: url(../Иконки-feat/diagram\ 1.svg);
+}
+.features-list:nth-child(4)::before {
+  background-image: url(../Иконки-feat/astronaut\ 1.svg);
+}
+
 .features-descr {
   line-height: 1.17;
 }
@@ -248,6 +284,39 @@ img {
   font-weight: 500;
   margin-bottom: 10px;
 }
+
+/*icon-social networks*/
+.social-networks {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social-networks:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link-icon {
+  display: inline-block;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+}
+.team-link-icon:hover {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+.team-icon {
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
 /* Футер*/
 .footer {
   background-color: var(--secondary-bg-color);
@@ -307,6 +376,11 @@ img {
   flex-basis: calc ((100% - var(--indent)) * var (--items)) / var(--items);
   margin: calc(var(--indent) / 2);
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-wrapper {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -334,6 +408,12 @@ img {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
+.accent-button {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .portfolio-link {
   color: var(--primary-text-color);
   font-size: 16px;
