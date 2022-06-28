@@ -148,7 +148,7 @@ img {
   text-align: center;
   padding: 200px 0;
 
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -207,34 +207,18 @@ img {
 .features-list:not(:last-child) {
   margin-right: 30px;
 }
-.features-list::before {
-  display: block;
-  content: ' ';
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px, 100px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70 px, 70 px;
-}
-
-.features-list:nth-child(1)::before {
-  background-image: url(../Иконки-feat/antenna\ 1.svg);
-}
-.features-list:nth-child(2)::before {
-  background-image: url(../Иконки-feat/clock\ 1.svg);
-}
-.features-list:nth-child(3)::before {
-  background-image: url(../Иконки-feat/diagram\ 1.svg);
-}
-.features-list:nth-child(4)::before {
-  background-image: url(../Иконки-feat/astronaut\ 1.svg);
-}
 
 .features-descr {
   line-height: 1.17;
+}
+.features-icon-box {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 /*Works*/
 .works {
@@ -298,8 +282,6 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 44px;
-  height: 44px;
   list-style: none;
   margin-top: 16px;
   margin-right: auto;
@@ -310,12 +292,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
 }
 
-.team-link-icon:not(:last-child) {
+.social-networks:not(:last-child) {
   margin-right: 10px;
 }
 
