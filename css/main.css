@@ -299,7 +299,7 @@ img {
   fill: #afb1b8;
 }
 
-.social-networks:not(:last-child) {
+.social-list:not(:last-child) {
   margin-right: 10px;
 }
 
