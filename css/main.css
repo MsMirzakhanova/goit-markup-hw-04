@@ -209,10 +209,11 @@ img {
 }
 
 .features-descr {
-  line-height: 1.17;
+  line-height: 1.71;
 }
 .features-icon-box {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
